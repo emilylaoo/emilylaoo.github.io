@@ -167,6 +167,12 @@ body {
     font-size: 50px;
 }
 
+#message3 {
+    text-align: center;
+    font-family: "mansalva";
+    font-size: 20px;
+}
+
 #cat-yippee {
     display: block;
     margin: 0px auto;
