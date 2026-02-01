@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>a letter</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="getname">
+            <h1 id="gotmail">you've got mail!</h1>
+            <h2 id="subtitle">please enter your name to open the letter</h2>
+            <input type="text" id="nameInput" name="nameInput">
+            <button id="submit" onclick="openPage()">submit</button>
+
+            <script> 
+                function openPage() {
+                    let name = document.getElementById('nameInput').value;
+                    if (name.toLowerCase() === "hannah" || name.toLowerCase() === "hannah cutler") {
+                        window.location.href = "letter.html";
+                    }
+                    else {
+                        alert("sorry, this letter is not for you.");
+                    }
+                }
+            </script>
+        </div>
+
+    </body>
+</html>

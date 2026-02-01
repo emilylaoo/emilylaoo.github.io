@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+
+body {
+    background-color: #ffe0f0;
+    font-family: "mansalva";
+}
+
+/* intro page style */
+
+#getname {
+  text-align: center;
+  margin-top: 20vh;
+  font-family: "mansalva";
+  font-weight: normal;
+}
+
+#gotmail, #subtitle {
+    margin: auto;
+    display: block;
+    margin-top: 5px;
+    padding: 10px 20px;
+    font-weight: normal
+}
+
+#nameInput {
+  padding: 12px;
+  margin-top: 20px;
+  margin-right: 10px;
+  border: 1.5px solid;
+  border-radius: 12px;
+  width: 250px;
+  box-sizing: border-box;
+  font-style: normal;
+  font-family: "mansalva";
+  font-size: 16px;
+}
+
+/* button styling */
+
+#submit, #no, #yes {
+    font-weight: 200;
+    font-style: normal;
+    font-size: 16px;
+    font-family: "mansalva";
+    transition: all 0.05s linear;
+    background-color: #d9534f;
+    border: solid 2px #d9534f;
+    border-radius: 15px;
+    color: white;
+    width: auto;
+    padding: 8px 15px;
+    height: auto;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.answer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25vh;
+    position: relative;
+}
+
+#no {
+    position: fixed;
+    z-index: 10;
+}
+
+#yes {
+    position: static;
+    z-index: 10;
+}
+
+/* envelope style */
+
+#envelope {
+    position: relative;
+    width: 400px;
+    height: 280px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    top: 20vh;
+    background-color: #f99d99;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.front.flap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: top;
+    transform: rotateX(0deg);
+    transition: transform 1s ease-in-out;
+    z-index: 1;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-top: 140px solid #d9534f; 
+}
+
+.front.pocket {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 140px solid transparent;
+    border-left: 200px solid #e2625e;
+    border-right: 200px solid #e2625e;
+    border-bottom: 140px solid #e66b66;
+    z-index: 1;
+}
+
+.letter {
+  background: white;
+  position: absolute;
+  top: 30%;
+  left: 2.5%;
+  width: 90%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  transition: top 1s ease-in-out 1s;
+  z-index: 0;
+}
+
+.letter .words {
+  font-family: "mansalva";
+  font-size: 16px;
+  text-align: center;
+}
+
+.letter .ask {
+  font-family: "mansalva";
+  font-size: 24px;
+  text-align: center;
+  color: #d9534f;
+  margin: 5px 0;
+  font-weight: 800;
+}
+
+#envelope.open .flap {
+  transform: rotateX(-180deg);
+}
+
+#envelope.open .letter {
+  top: -15%;
+  
+}
+
+/* final page style */
+
+#message {
+    text-align: center;
+    margin-top: 50px;
+    font-family: "mansalva";
+    font-size: 30px;
+}
+
+#message2 {
+    text-align: center;
+    margin-top: 10px;
+    font-family: "mansalva";
+    font-size: 50px;
+}
+
+#cat-yippee {
+    display: block;
+    margin: 0px auto;
+}
